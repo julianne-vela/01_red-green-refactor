@@ -7,5 +7,6 @@ describe('copy and push function', () => {
         const fruitBasket = copyAndPush(fruits, 'orange');
 
         expect(fruitBasket).toEqual([...fruits, 'orange']);
+        expect(fruits).not.toContain('orange'); // original fruits array remains intact and unchanged
     });
 });
