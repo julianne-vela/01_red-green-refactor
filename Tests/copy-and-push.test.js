@@ -1,7 +1,7 @@
 const copyAndPush = require('../Functions/copy-and-push');
 
 describe('copy and push function', () => {
-    it('should copy the given array and add a value to the array', () => {
+    it('should copy the given array and then add a new value to the array', () => {
         const fruits = ['apple', 'pear', 'kiwi'];
 
         const fruitBasket = copyAndPush(fruits, 'orange');

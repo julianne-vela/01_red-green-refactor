@@ -1,5 +1,5 @@
-const getName = (characterObj) => {
-    return characterObj.name;
+const getName = ({ name }) => {
+    return name;
 };
 
 module.exports = getName;
