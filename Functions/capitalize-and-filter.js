@@ -1,14 +1,7 @@
 const capitalizeAndFilter = (strArray) => {
-    const filteredArray = [];
-
-    for(const str of strArray) {
-        const capStr = str.toUpperCase();
-        // const regEx = /^(?!F)\w+/g;
-        // const filteredArray = [...capStr.matchAll(regEx)];
-        if(capStr.charAt(0) !== 'F') {
-            filteredArray.push(capStr); 
-        }
-    }
+    const regEx = /^(?!F)\w+/g;
+    const upperStrArray = strArray.map(str => str.toUpperCase());
+    const filteredArray = upperStrArray.filter(str => str.match(regEx));
     return filteredArray;
 };
 

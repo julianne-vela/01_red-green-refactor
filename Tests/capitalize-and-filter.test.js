@@ -13,7 +13,6 @@ describe('capitalize and filter function', () => {
             'elegant'
         ];
 
-        console.log(strArray);
         const filteredArray = capitalizeAndFilter(strArray);
 
         expect(filteredArray).toEqual(['GLAM', 'LUSCIOUS', 'LAUDED', 'CHARMING', 'ELEGANT']);
